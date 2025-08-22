@@ -40,4 +40,4 @@ if ($result->num_rows > 0) {
 
 $conn -> close();
 
-echo "<a href='create.php'>Inserir novo Registro</a>";
+echo "<a href='create.times.php'>Inserir novo Registro</a>";
