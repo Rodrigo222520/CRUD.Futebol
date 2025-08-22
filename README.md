@@ -60,7 +60,7 @@ Este projeto implementa um CRUD (Create, Read, Update, Delete) para a tabela **j
 
 Edite o arquivo **`config.php`** (ou equivalente no projeto) e configure com os dados do seu MySQL local:
 
-```php
+//```php
 <?php
 $host = "localhost";
 $user = "root";  
