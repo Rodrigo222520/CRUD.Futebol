@@ -4,7 +4,8 @@ USE futebol_db;
 CREATE TABLE times (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    cidade VARCHAR(100) NOT NULL
+    cidade VARCHAR(100) NOT NULL,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE jogadores (
@@ -13,6 +14,7 @@ CREATE TABLE jogadores (
     posicao VARCHAR(30) NOT NULL,
     numero_camisa INT NOT NULL,
     time_id INT,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (time_id) REFERENCES times(id)
 );
 
@@ -22,7 +24,8 @@ CREATE TABLE partidas (
     time_fora_id INT NOT NULL,
     data_jogo DATE NOT NULL,
     gols_casa INT DEFAULT 0,
-    gols_fora INT DEFAULT 0,
+    gols_fora INT DEFAULT 0,,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (time_casa_id) REFERENCES times(id),
     FOREIGN KEY (time_fora_id) REFERENCES times(id)
 );
