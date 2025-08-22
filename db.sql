@@ -42,3 +42,22 @@ INSERT INTO jogadores (nome, posicao, numero_camisa, time_id) VALUES
 INSERT INTO partidas (time_casa_id, time_fora_id, data_jogo, gols_casa, gols_fora) VALUES
 (1, 2, '2025-08-20', 2, 1),
 (3, 1, '2025-08-27', 0, 0);
+
+INSERT INTO times (nome, cidade) VALUES
+('Flamengo','Rio de Janeiro'),
+('Palmeiras','São Paulo'),
+('Cruzeiro','Belo Horizonte'),
+('Bahia','Salvador'),
+('Botafogo','Rio de Janeiro'),
+('Mirassol','São Paulo'),
+('São Paulo','São Paulo'),
+('Fluminense','Rio de janeiro'),
+('Bragantino','São Paulo'),
+('Ceará SC','Fortaleza'),
+('Atlético-MG','Belo Horizonte'),
+('Internacional','Porto Alegre'),
+('Santos','São Paulo'),S
+('EC Vitória','Salvador'),
+('juventude','Caxias do Sul'),
+('Fortaleza','Fortaleza'),
+('Sport Recife','Recife');
